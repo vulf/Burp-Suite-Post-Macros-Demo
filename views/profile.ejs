@@ -1,0 +1,32 @@
+<html>
+    <head>
+      <title>Settings</title>
+      <style>
+      .box {
+        border: 3px solid;
+        text-align: center;
+        width: 30%;
+        padding: 10px 0;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      #message {
+        color: MediumSeaGreen;
+      }
+      </style>
+    </head>
+<body>
+  <div class='box'>
+    <form action="/profile" method="post">
+        <h2>Edit profile</h2>
+        <input type="text" name="username" id="username" placeholder="New username">
+        <input type="submit" value="Update">
+    </form>
+    <span id='message'><%=message%></span>
+  </div>
+</body>
+</html>
